@@ -148,14 +148,37 @@
         <p>Ti preghiamo di rispondere entro il 20 Aprile 2026</p>
         
         <form action="https://formspree.io/f/mlgwrjyo" method="POST">
-            <input type="text" id="boxRicerca" placeholder="Cerca il tuo Nome">
-                <button onclick="sbloccaParola()">Verifica</button>
-
-                <ul id="listaSegreta">
-                  <li id="Lucia Depedri" style="display:none">Lucia Depedri</li>
-                  <li id="Gabriele Chemelli" style="display:none">Gabriele Chemelli</li>
-                  <li id="Filippo Mosna" style="display:none">Filippo Mosna</li>
-                </ul>
+            <label for="ricerca">Cerca nel database:</label>
+            <input type="text" id="mioInput" list="risultati" oninput="verificaEMostra()" placeholder="Scrivi qualcosa...">
+            
+            <datalist id="risultati"></datalist>
+            
+            <script>
+            // La tua lista segreta (nascosta nel codice)
+            const listaSegreta = ["Mela", "Banana", "Arancia", "Computer", "HTML"];
+            
+            function verificaEMostra() {
+                const input = document.getElementById('mioInput');
+                const datalist = document.getElementById('risultati');
+                const valoreInserito = input.value.trim();
+            
+                // Puliamo la lista ad ogni carattere digitato
+                datalist.innerHTML = '';
+            
+                // Controlliamo se la parola inserita è presente nella lista segreta
+                // (Usiamo il minuscolo per rendere la ricerca non sensibile alle maiuscole)
+                let match = listaSegreta.find(parola => 
+                    parola.toLowerCase() === valoreInserito.toLowerCase()
+                );
+            
+                if (match) {
+                    // Se c'è corrispondenza, creiamo l'opzione visibile nel menù a tendina
+                    let option = document.createElement('option');
+                    option.value = match;
+                    datalist.appendChild(option);
+                }
+            }
+            </script>
 
             
             
