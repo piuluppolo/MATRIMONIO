@@ -131,7 +131,7 @@
         <div class="details-card">
             <h2>La Cerimonia</h2>
             <p>Ore 11:00</p>
-            <p><strong>Chiesetta dei Frati di San Bernardino</strong><br>Trento (TN)</p>
+            <p><strong>Chiesa di San Bernardino</strong><br>Trento (TN)</p>
             <a href="https://maps.app.goo.gl/w67fPFZbEaRtRoZ76" target="_blank" style="color: var(--primary);">Apri su Maps</a>
         </div>
 
@@ -149,7 +149,10 @@
         
         <form action="https://formspree.io/f/mlgwrjyo" method="POST">
             <label>Nome e Cognome</label>
-            <input type="text" name="nome" placeholder="Es: Zanga Zebbi" required>
+            <select name="lista degli invitati" required>
+                <option value="Lucia Depedri">Lucia Depedri</option>
+                <option value="Gabriele Chemelli">Gabriele Chemelli</option>
+            </select>
 
             <label>Parteciperai?</label>
             <select name="presenza" required>
@@ -157,10 +160,8 @@
                 <option value="no">Purtroppo non potrò esserci</option>
             </select>
 
-            <label>Numero di persone (inclusi bambini)</label>
-            <input type="number" name="ospiti" min="1" value="1">
 
-            <label>Intolleranze, allergie e preferenze alimentari</label>
+            <label>Problemi (Intolleranze e Allergie Alimentari)</label>
             <textarea name="intolleranze" rows="3" placeholder="Es: Celiachia, Vegano, Allergia alle noci..."></textarea>
 
             <div style="text-align: center; margin-top: 30px;">
