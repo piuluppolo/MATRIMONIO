@@ -148,21 +148,14 @@
         <p>Ti preghiamo di rispondere entro il 20 Aprile 2026</p>
         
         <form action="https://formspree.io/f/mlgwrjyo" method="POST">
-            <label for="nominativi">Seleziona il tuo nome:</label>
-            <input list="invitati" id="nominativi" name="nominativi">
+            <input type="text" id="boxRicerca" placeholder="Cerca il tuo Nome">
+                <button onclick="sbloccaParola()">Verifica</button>
 
-            <datalist id="invitati">
-                <option value="Lucia Depedri">
-                <option value="Gabriele Chemelli">
-                <option value="Roberto Depedri">
-                <option value="Cristina Zeni">
-                <option value="Laura Depedri">
-                <option value="Alessandro Mosna">
-                <option value="Filippo Mosna">
-                <option value="Antonia Larentis">
-                <option value="Roberta Depedri">
-                <option value="Roberto Fontanari">
-                </datalist>
+                <ul id="listaSegreta">
+                  <li id="Lucia Depedri" style="display:none">Lucia Depedri</li>
+                  <li id="Gabriele Chemelli" style="display:none">Gabriele Chemelli</li>
+                  <li id="Filippo Mosna" style="display:none">Filippo Mosna</li>
+                </ul>
 
             
             
