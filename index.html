@@ -148,12 +148,24 @@
         <p>Ti preghiamo di rispondere entro il 20 Aprile 2026</p>
         
         <form action="https://formspree.io/f/mlgwrjyo" method="POST">
-            <label>Nome e Cognome</label>
-            <select name="lista degli invitati" required>
-                <option value="Lucia Depedri">Lucia Depedri</option>
-                <option value="Gabriele Chemelli">Gabriele Chemelli</option>
-            </select>
+            <label for="nominativi">Seleziona il tuo nome:</label>
+            <input list="invitati" id="nominativi" name="nominativi">
 
+            <datalist id="invitati">
+                <option value="Lucia Depedri">
+                <option value="Gabriele Chemelli">
+                <option value="Roberto Depedri">
+                <option value="Cristina Zeni">
+                <option value="Laura Depedri">
+                <option value="Alessandro Mosna">
+                <option value="Filippo Mosna">
+                <option value="Antonia Larentis">
+                <option value="Roberta Depedri">
+                <option value="Roberto Fontanari">
+                </option>datalist>
+
+            
+            
             <label>Parteciperai?</label>
             <select name="presenza" required>
                 <option value="si">Oh Yeah, alla grande!</option>
