@@ -148,14 +148,14 @@
         <p>Ti preghiamo di rispondere entro il 20 Aprile 2026</p>
         
         <form action="https://formspree.io/f/mlgwrjyo" method="POST">
-            <label for="ricerca">Cerca nel database:</label>
-            <input type="text" id="mioInput" list="risultati" oninput="verificaEMostra()" placeholder="Scrivi qualcosa...">
+            <label for="ricerca">Sei in lista?</label>
+            <input type="text" id="mioInput" list="risultati" oninput="verificaEMostra()" placeholder="Scrivi il tuo nominativo...">
             
             <datalist id="risultati"></datalist>
             
             <script>
             // La tua lista segreta (nascosta nel codice)
-            const listaSegreta = ["Mela", "Banana", "Arancia", "Computer", "HTML"];
+            const listaSegreta = ["Lucia Depedri", "Gabriele Chemelli", "Roberto Depedri", "Cristina Zeni", "Laura Depedri", "Alessandro Mosna", "Filippo Mosna", "Antonia Larentis", "Roberta Depedri", "Roberto Fontanari", "Lorenzo Fontanari", "Floriana Ciaccio", "Andrea Fontanari", "Margherita Berlanda", "Claudio Zeni", "Diego Zeni", "Nadia Zeni", "Giovanni Bisesti", "Tania Bisesti", "Daniele Tavernini", "Marco Bisesti", "Marcello Molfese", "Angela Molfese", "Marisa Tabarelli", "Sofia Barp", "Gianantonio Feltrin", "Arianna Castegnaro", "Alberto Lazzari", "Giorgia De Biagi", "Alberto Cagnotto", "Sole Cagnotto", "Miriam Bertoldi", "Alessandra Pojer", "Angela Valentini", "Elisa Dalbosco", "Giulia Corsini", "Chiara Abbdessa", "Fabiano Bonomi", "Isabella Paris", "Samuele Chemelli", "Angelica Chemelli", "Gianluca Bortolotti", "Achille Paris", "Arianna Zanella", "Matteo Zanella", "Armando Zanella", "Melania Paris", "Cristina Dalsasso", "Valentino Chemelli", "Tecla Chemelli", "Michele Pontalti", "Giada Pontalti", "Pietro Zanonato", "Lisa Pontalti", "Andrea Pontalti", "Sebastiano Chemelli", "Morena Donini", "Gabriele Lotti", "Lorenzo Tonini", "Matteo Franceschini", "Letizia Bernardi", "Anna Baldessari", "Chiara Mazzucotelli", "Sara Perlot", "Edoardo Paissan", "Marco Chelodi", "Vittoria Tiso", "Francesco Andreatta", "Martina Maniezzo", "Nicola Ruvoletto"];
             
             function verificaEMostra() {
                 const input = document.getElementById('mioInput');
